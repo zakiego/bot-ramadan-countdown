@@ -2,10 +2,7 @@ name: Pull Data
 
 on: 
   schedule:
-    - cron: '0 0 * * *'
-  push:
-    branches:
-      - main
+    - cron: '0 13 * * *' # 13:00 UTC = 20:00 WIB (UTC+7) = 21:00 WITA (UTC+8)
     
 env:
   TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
