@@ -57,7 +57,7 @@ const main = async () => {
 	}
 
 	let content = `${days} days until Ramadan`;
-	if (days === 1) {
+	if (days <= 1) {
 		content = `${days} day until Ramadan`;
 	}
 
